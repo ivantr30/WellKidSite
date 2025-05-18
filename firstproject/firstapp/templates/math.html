@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block connect%}
+    <link rel = "stylesheet" href="{%static 'firstapp\css\style1.css'%}">
+{%endblock%}
+{%block content%}
+            <table>
+                <thead>
+                    <th>
+                        Формула
+                    </th>
+                    <th>
+                        Применение
+                    </th>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td>
+                            <img src="{%static 'firstapp\pictures\formula.jpg'%}">
+                        </td>
+                        <td>
+                            <p>asdfgfadsfgg</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+{%endblock%}
