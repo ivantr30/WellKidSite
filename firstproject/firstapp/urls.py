@@ -5,4 +5,7 @@ urlpatterns = [
     path('function', views.function),
     path('formulas', views.formulas),
     path('mathformulas', views.mathformulas),
+    path('algebraformulas', views.algebraformulas),
+    path('geometryformulas', views.geometryformulas),
+    path('physicsformulas', views.physicsformulas),
 ]

@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block connect%}
+    <link rel = "stylesheet" href="{%static 'firstapp\css\style1.css'%}">
+{%endblock%}
+{%block content%}
+            <table>
+                <thead>
+                    <th>
+                        Формула
+                    </th>
+                    <th>
+                        Применение
+                    </th>
+                </thead>
+                <tbody> 
+                    {%block rows%}
+                    {%endblock%}
+                </tbody>
+            </table>
+{%endblock%}
