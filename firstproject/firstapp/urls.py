@@ -9,4 +9,5 @@ urlpatterns = [
     path('geometryformulas', views.geometryformulas),
     path('physicsformulas', views.physicsformulas),
     path('class', views.some_class.as_view()),
+    path('reservation', views.hz),
 ]
