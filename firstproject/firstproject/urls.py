@@ -21,6 +21,6 @@ import secondapp.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('app/', include(firstapp.urls)),
-    path('main/', include(secondapp.urls)),
+    path('formulas/', include(firstapp.urls)),
+    path('', include(secondapp.urls)),
 ]

@@ -19,6 +19,15 @@ aside{
 }
 .settings{
 }
+.basereturn{
+    background-color: unset;
+    display: unset;
+    width: 80px;
+    color: unset;
+    top: 17px;
+    left: 17px;
+    padding: 0px;
+}
 ul{
     margin: 0;
     height: 70vh;

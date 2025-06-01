@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path('function', views.function),
-    path('formulas', views.formulas),
+    path('', views.formulas),
     path('mathformulas', views.mathformulas),
     path('algebraformulas', views.algebraformulas),
     path('geometryformulas', views.geometryformulas),
