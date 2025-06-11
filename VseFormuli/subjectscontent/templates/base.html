@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {%load static%}
-    <link rel = "stylesheet" href="{%static 'subjectscontent\css\main.css'%}">
+    <link rel = "stylesheet" href="{%static 'subjectscontent\css\base.css'%}">
     {%block connect%}
     {%endblock%}
     <title>VseFormuli</title> <!--.ru-->
@@ -25,12 +25,12 @@
             </ul>
         </nav>
         <footer>
-            <img src = "https://w7.pngwing.com/pngs/327/195/png-transparent-computer-icons-gear-options-icon-logo-silhouette-black-and-white-thumbnail.png" style="right: 71%; position: absolute; width: 20%;" class = "settings">
+            <img src = "{%static 'subjectscontent\pictures\settingsIcon.png'%}" style="right: 71%; position: absolute; width: 20%;" class = "settings">
             <a href = "" style="text-align: center; right: 9%; position: absolute; width: 50%;">Возникли вопросы? - напишите в тех.поддержку</a>
         </footer>
     </aside>
     <main>
-        <button onClick="OpenClose()" id = "openclosebutton">Закрыть меню</button>
+        <button onClick="OpenClose()" id = "openclosebutton"><img src="{%static 'subjectscontent\pictures\toggleMenu.png'%}" class="toggleMenu"></button>
         <form action="">
             <input type="search" name="" id="" placeholder="Введите формулу">
             <input type="submit" value = "Найти" name="" id="">
@@ -44,11 +44,11 @@
             isСlosed = !isСlosed;
             if(isСlosed){
                 document.getElementById("sidebar").style.display = "none";
-                document.getElementById("openclosebutton").innerText = "Открыть меню";
+                document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(0deg)";
             }
             else{
                 document.getElementById("sidebar").style.display = "block";
-                document.getElementById("openclosebutton").innerText = "Закрыть меню";
+                document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(180deg)";
             }
         }
     </script>

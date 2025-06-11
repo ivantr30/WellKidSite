@@ -54,9 +54,11 @@ button{
     left: 0%;
     top: 50%;
     transform: translateY(-50%);
-    height: 5vh;
-    width: 5vw;
+    height: 50px;
+    width: 50px;
     position: absolute;
+    border: none;
+    background: none;
 }
 main{
     height: 100vh;
@@ -73,4 +75,11 @@ h1{
 }
 .Main{
     width: max-content;
+}
+.toggleMenu{
+    width: 50px;
+    left: 0%;
+    top: 0%;
+    transform: rotate(180deg);
+    filter: invert(180);
 }
