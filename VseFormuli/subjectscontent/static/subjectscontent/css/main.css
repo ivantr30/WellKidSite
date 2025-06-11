@@ -48,6 +48,7 @@ a{
     text-decoration: none;
     background-color: midnightblue;
     padding: 20px;
+    border-radius: 20px;
 }
 button{
     left: 0%;
