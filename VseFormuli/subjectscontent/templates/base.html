@@ -29,9 +29,8 @@
             <a href = "" style="text-align: center; right: 9%; position: absolute; width: 50%;">Возникли вопросы? - напишите в тех.поддержку</a>
         </footer>
     </aside>
-    <button onClick="OpenClose()" id = "openclosebutton" class="mobileButton"><img src="{%static 'subjectscontent\pictures\toggleMenu.png'%}" class="toggleMenu"></button>
     <main>
-        <button onClick="OpenClose()" id = "openclosebutton"><img src="{%static 'subjectscontent\pictures\toggleMenu.png'%}" class="toggleMenu"></button>
+        <button onClick="OpenClose('pcbutton')" id = "openclosebutton" class="pcbutton"><img src="{%static 'subjectscontent\pictures\toggleMenu.png'%}" class="toggleMenu"></button>
         <form action="">
             <input type="search" name="" id="" placeholder="Введите формулу">
             <input type="submit" value = "Найти" name="" id="">
@@ -39,17 +38,27 @@
     {%block content%}
     {%endblock%}
     </main>
+    <button onClick="OpenClose('mobileButton')" id = "openclosebutton" class="mobileButton"><img src="{%static 'subjectscontent\pictures\toggleMenu.png'%}" class="toggleMenu"></button>
     <script>
         var isСlosed = false;
-        function OpenClose() {
+        function OpenClose(buttonclicked) {
             isСlosed = !isСlosed;
+            const main = document.querySelectorAll("main");
             if(isСlosed){
                 document.getElementById("sidebar").style.display = "none";
                 document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(0deg)";
+                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(0deg)";
+                if(buttonclicked == "mobileButton"){
+                    main.forEach(element => { element.style.display = 'flex'; });
+                }
             }
             else{
                 document.getElementById("sidebar").style.display = "block";
                 document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(180deg)";
+                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(180deg)";
+                if(buttonclicked == "mobileButton"){
+                    main.forEach(element => { element.style.display = 'none'; });
+                }
             }
         }
     </script>

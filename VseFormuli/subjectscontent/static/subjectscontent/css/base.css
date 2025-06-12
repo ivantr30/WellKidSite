@@ -104,6 +104,12 @@ h1{
     main{
         display: none;
     }
+    input[type="search"]{
+        width: 100vw;
+    }
+    .pcbutton{
+        display: none;
+    }
     .mobileButton{
         display: block;
         position: absolute;
