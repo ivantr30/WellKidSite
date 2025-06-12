@@ -97,3 +97,28 @@ h1{
     transform: rotate(180deg);
     filter: invert(180);
 }
+.mobileButton{
+    display: none;
+}
+@media screen and (max-width:600px){
+    main{
+        display: none;
+    }
+    .mobileButton{
+        display: block;
+        position: absolute;
+        left: 85%;
+        top: 5%;
+        padding: 0%;
+        margin: 0%;
+    }
+    aside{
+        width: 100vw;
+        height: 100vh;
+    }
+    footer{
+        display: flex;
+        position: relative;
+        bottom: 3vh;
+    }
+}
