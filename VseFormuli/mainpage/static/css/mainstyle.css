@@ -33,3 +33,14 @@ a{
   padding: 20px;
   border-radius: 20px;
 }
+@media screen and (max-width:600px){
+  ul{
+    flex-direction: column;
+    height: 50vh;
+  }
+  .main{
+    width: 100vw;
+    height: 50vh;
+    margin-top: 42.5vh;
+  }
+}
