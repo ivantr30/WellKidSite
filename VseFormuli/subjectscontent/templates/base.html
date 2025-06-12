@@ -45,19 +45,25 @@
             isСlosed = !isСlosed;
             const main = document.querySelectorAll("main");
             if(isСlosed){
-                document.getElementById("sidebar").style.display = "none";
-                document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(0deg)";
-                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(0deg)";
                 if(buttonclicked == "mobileButton"){
-                    main.forEach(element => { element.style.display = 'flex'; });
+                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(180deg)";
+                    document.getElementById("sidebar").style.display = "block";
+                    main.forEach(element => { element.style.display = 'none'; });
+                }
+                else{
+                    document.getElementById("sidebar").style.display = "none";
+                    document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(0deg)";
                 }
             }
             else{
-                document.getElementById("sidebar").style.display = "block";
-                document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(180deg)";
-                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(180deg)";
                 if(buttonclicked == "mobileButton"){
-                    main.forEach(element => { element.style.display = 'none'; });
+                document.getElementsByClassName("toggleMenu")[1].style.transform = "rotate(0deg)";
+                    document.getElementById("sidebar").style.display = "none";
+                    main.forEach(element => { element.style.display = 'flex'; });
+                }
+                else{
+                document.getElementsByClassName("toggleMenu")[0].style.transform = "rotate(180deg)";
+                    document.getElementById("sidebar").style.display = "block";
                 }
             }
         }

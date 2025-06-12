@@ -102,10 +102,10 @@ h1{
 }
 @media screen and (max-width:600px){
     main{
-        display: none;
+        display: flex;
     }
     input[type="search"]{
-        width: 100vw;
+        width: 60vw;
     }
     .pcbutton{
         display: none;
@@ -119,6 +119,7 @@ h1{
         margin: 0%;
     }
     aside{
+        display: none;
         width: 100vw;
         height: 100vh;
     }
@@ -126,5 +127,8 @@ h1{
         display: flex;
         position: relative;
         bottom: 3vh;
+    }
+    .toggleMenu{
+        transform: rotate(0deg);
     }
 }
