@@ -4,6 +4,8 @@ body{
 }
 .basereturn{
     top: 0%;
+    left: 0%;
+    margin-left: 1.5%;
 }
 a{
     width: unset;
@@ -18,4 +20,7 @@ form{
 }
 div{
     margin-left: 1%;
+}
+img{
+    width: 7%;
 }
