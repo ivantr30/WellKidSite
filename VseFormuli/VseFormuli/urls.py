@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 import subjectscontent.urls
 import mainpage.urls
+import cinema.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('formulas/', include(subjectscontent.urls)),
     path('', include(mainpage.urls)),
+    path('cinema/', include(cinema.urls)),
 ]

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'subjectscontent',
     'mainpage',
+    'cinema',
 ]
 
 MIDDLEWARE = [

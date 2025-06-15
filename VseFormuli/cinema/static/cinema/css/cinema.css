@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+.basereturn{
+    top: 0%;
+}
+a{
+    width: unset;
+    color: unset;
+    text-decoration: none;
+    background-color: unset;
+    padding: 0px;
+    border-radius: 0px;
+}
+form{
+    margin-top: 1%;
+}
+div{
+    margin-left: 1%;
+}
