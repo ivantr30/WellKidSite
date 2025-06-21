@@ -9,6 +9,7 @@ body{
 }
 a{
     padding: 0px;
+    background-color: unset;
 }
 form{
     margin-top: 1%;
@@ -24,9 +25,11 @@ div{
 }
 .row{
     height: 15%;
+    flex-direction: row;
+    gap: 4%;
 }
 img{
-    width: 11%;
+    width: 180px;
 }
 h6{
     margin-block-start: 0.5em;
