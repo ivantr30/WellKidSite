@@ -20,57 +20,28 @@
             <h6>Математика 1-6</h6>
         </div>
         <div class="row">
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
+            {% for i in videos %}
+                <a href="{{ i.url }}"><img src="{{ i.preview.url }}"></a>
+                <span>{{ i.title }}</span>
+            {% endfor %}
         </div>
         <div class="category">
             <h6>Геометрия 7-11</h6>
         </div>
         <div class="row">
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
+            
         </div>
         <div class="category">
             <h6>Алгебра 7-11</h6>
         </div>
         <div class="row">
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
+            
         </div>
         <div class="category">
             <h6>Физика 7-11</h6>
         </div>
         <div class="row">
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
-            <a href=""><img src="{%static 'cinema/pictures/preview.avif'%}"></a>
+            
         </div>
     </div>
 </body>
