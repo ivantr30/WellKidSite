@@ -1,0 +1,12 @@
+{%extends 'cinema/cinema.html'%}
+{%block content%}
+<div class="addVideo">
+    <h2 style="text-align: center;">Добавить видева</h2>
+    <form method = "POST">
+        {% csrf_token%}
+        <button type="submit" class="PostButton">
+            Добавить
+        </button>
+    </form>
+</div>
+{%endblock%}

@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="{%static 'cinema/css/cinema.css'%}">
     <title>Cinema</title>
 </head>
-<body>
-    <a href=".." class="basereturn"><img src = "https://cdn.alfacrm.pro/favicon-48.png" class="basereturn"></a>
+<body><a href=".."><img src = "https://cdn.alfacrm.pro/favicon-48.png" class="basereturn" style="top: 2%;height: 8%;width: 4%;"></a>
+    {% block content%}
     <form action="">
-        <input type="search" name="" id="" placeholder="Введите формулу">
+        <input type="search" name="" id="" placeholder="Введите название видева">
         <input type="submit" value = "Найти" name="" id="">
     </form>
+    <a href="addVideo"><img src="{%static 'cinema/pictures/addVideoButton.svg'%}" alt="" class="addVideoButton" style="right: 61%; top: -1.5%; filter: invert(90%); height: 17.5%;"></a>
     <div class="column">
         <div class="category">
             <h6>Математика 1-6</h6>
@@ -44,5 +45,6 @@
             
         </div>
     </div>
+    {% endblock %}
 </body>
 </html>

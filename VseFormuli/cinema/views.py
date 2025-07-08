@@ -5,3 +5,5 @@ from .models import Video
 def cinema(request):
     videos = Video.objects.all()
     return render(request, "cinema/cinema.html", context={"videos":videos})
+def addVideos(request):
+    return render(request, "cinema/addVideo.html")
