@@ -4,6 +4,7 @@
     <h2 style="text-align: center;">Добавить видева</h2>
     <form method = "POST">
         {% csrf_token%}
+        {{form.as_p}}
         <button type="submit" class="PostButton">
             Добавить
         </button>
