@@ -5,3 +5,4 @@ class addVideoForm(ModelForm):
     class Meta:
         model = Video
         fields = "__all__"
+        

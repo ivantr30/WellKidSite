@@ -9,7 +9,7 @@ def cinema(request):
 def addVideos(request):
     form = addVideoForm()
     if request.method == "POST":
-        form = addVideoForm(request.POST)
+        form = addVideoForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return cinema(request)
