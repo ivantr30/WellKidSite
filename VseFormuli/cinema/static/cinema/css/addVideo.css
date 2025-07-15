@@ -1,0 +1,22 @@
+button{
+    left: initial;
+    top: initial;
+    transform: initial;
+    height: initial;
+    width: initial;
+    position: absolute;
+    margin-left: 7.5%;
+    border: medium none currentColor;
+    border-radius: 5px 5px 5px 5px;
+    background: rgb(233, 233, 237);
+}
+.PostButton{
+    display: flex;
+}
+form{
+    display: grid;
+    align-items: end;
+}
+@media screen and (max-width:600px){
+
+}

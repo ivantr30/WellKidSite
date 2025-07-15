@@ -22,7 +22,7 @@
         </div>
         <div class="row">
             {% for i in videos %}
-                <a href="{{ i.url }}"><img src="{{ i.preview.url }}"></a>
+                <a href="{{ i.video.url }}" target="_blank"><img src="{{ i.preview.url }}"></a>
                 <span>{{ i.title }}</span>
             {% endfor %}
         </div>
